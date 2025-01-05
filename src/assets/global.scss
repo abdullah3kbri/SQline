@@ -1,0 +1,80 @@
+/* src/assets/global.scss */
+$primary-color: #FCF2D9;
+$secondary-color: #690108;
+$card-color: #E6C7B2;
+$grey-color: #D3D3D3;
+h1,h2, h3, h4, h5, h6 {
+    color: $secondary-color;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+body{
+    height: 1900px;
+}
+@font-face {
+    font-family: 'tajwa-bold';
+    src: url(../assets/fonts/Tajawal-Bold.ttf);
+}
+@font-face {
+    font-family: 'tajwal-medium';
+    src: url(../assets/fonts/Tajawal-Medium.ttf);
+}
+@font-face {
+    font-family: 'tajwal-regular';
+    src: url(../assets/fonts/Tajawal-Regular.ttf);
+}
+@font-face {
+    font-family: 'tajwal-light';
+    src: url(../assets/fonts/Tajawal-Light.ttf);
+}
+*{
+    font-family: 'tajwal-regular';
+    direction: rtl;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul,
+ol,
+li {
+    list-style: none;
+    padding: 0 ;
+    margin: 0;
+}
+a {
+    color: #000;
+    display: inline-block;
+    text-decoration: none;
+}
+a:hover{
+    color: $secondary-color !important;
+}
+p,
+span {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+button {
+    border: none;
+}
+a:hover {
+    text-decoration: none;
+}
+header nav{
+    background-color: $primary-color;
+}
+.v-icon{
+    color: $secondary-color;
+}
+.active-link{
+    font-weight: bold;
+    color: $secondary-color;
+}
+.main-btn{
+    background-color: $secondary-color;
+    border-radius: 10px;
+}
+/* Add more global styles here */
