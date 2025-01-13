@@ -34,11 +34,11 @@
                 <div class="card-body text-center">
                   <h5 class="card-title">عرض خاص</h5>
                   <p class="card-text py-3">زيت سكيو لاين جم بخصم يصل الى<span class="fw-bold"> 10%.</span></p>
-                  <a href="#" class="main-btn py-2 px-5 text-light">اطلبي الآن</a>
+                  <v-btn class="main-btn py-2 px-5 text-light">اطلبي الآن</v-btn>
                 </div>
               </div>
               <div class="col-md-4">
-                <img src="../assets/img/card-offer.png" class="img-fluid rounded-start" alt="...">
+                <img src="/img/card-offer.png" class="img-fluid rounded-start" alt="...">
               </div>
             </div>
           </div>
@@ -52,11 +52,11 @@
                   <p class="card-text py-3">احصلي على افضل عرض للحصول على بشرة اكثرا نظارة اشراقاً بخصم يصل الى <span
                       class="fw-bold">20
                       %.</span></p>
-                  <a href="#" class="main-btn py-2 px-5 text-light">اطلبي الآن</a>
+                  <v-btn class="main-btn py-2 px-5 text-light">اطلبي الآن</v-btn>
                 </div>
               </div>
               <div class="col-md-4">
-                <img src="../assets/img/card-offer.png" class="img-fluid rounded-start" alt="...">
+                <img src="/img/card-offer.png" class="img-fluid rounded-start" alt="...">
               </div>
             </div>
           </div>
@@ -82,13 +82,13 @@
           >
             <div class="d-flex fill-height justify-center align-center">
               <div class="img-card">
-                <img src='../assets/img/imgSlider1.png'>
+                <img src='/img/imgSlider1.png'>
               </div>
               <div class="img-card">
-                <img src='../assets/img/imgSlider1.png'>
+                <img src='/img/imgSlider1.png'>
               </div>
               <div class="img-card">
-                <img src='../assets/img/imgSlider1.png'>
+                <img src='/img/imgSlider1.png'>
               </div>
             </div>
           </v-sheet>
@@ -114,20 +114,20 @@
           >
             <div class="d-flex fill-height justify-center align-center">
               <div class="img-card">
-                <img src='../assets/img/imgSlider1.png'>
+                <img src='/img/imgSlider1.png'>
               </div>
               <div class="img-card">
-                <img src='../assets/img/imgSlider1.png'>
+                <img src='/img/imgSlider1.png'>
               </div>
               <div class="img-card">
-                <img src='../assets/img/imgSlider1.png'>
+                <img src='/img/imgSlider1.png'>
               </div>
             </div>
           </v-sheet>
         </v-carousel-item>
       </v-carousel>
     </div>
-    <About class="pt-5"/>
+    <About class="pt-5" id="about-us"/>
     <YemenMap />
     <Footer />
     <!-- <Products /> -->
@@ -138,7 +138,7 @@
 import YemenMap from '@/components/YemenMap.vue';
 import Footer from '@/components/Footer.vue';
 import Products from '@/components/Products.vue';
-
+// mohammed
 export default {
   data() {
     return {
@@ -146,32 +146,32 @@ export default {
         {
           title: "بكج العناية ٤ منتجات",
           price: 80,
-          imgSrc: '../src/assets/img/ImageContainer.png',
+          imgSrc: '/img/ImageContainer.png',
         },
         {
           title: "بكج العناية ٤ منتجات",
           price: 80,
-          imgSrc: '../src/assets/img/ImageContainer.png',
+          imgSrc: '/img/ImageContainer.png',
         },
         {
           title: "بكج العناية ٤ منتجات",
           price: 80,
-          imgSrc: '../src/assets/img/ImageContainer.png',
+          imgSrc: '/img/ImageContainer.png',
         },
         {
           title: "بكج العناية ٤ منتجات",
           price: 80,
-          imgSrc: '../src/assets/img/ImageContainer.png',
+          imgSrc: '/img/ImageContainer.png',
         },
         {
           title: "بكج العناية ٤ منتجات",
           price: 80,
-          imgSrc: '../src/assets/img/ImageContainer.png',
+          imgSrc: '/img/ImageContainer.png',
         },
         {
           title: "بكج العناية ٤ منتجات",
           price: 80,
-          imgSrc: '../src/assets/img/ImageContainer.png',
+          imgSrc: '/img/ImageContainer.png',
         },
       ],
         slides: [
@@ -221,7 +221,7 @@ export default {
 .card .card-body p span{
   color: #690108;
 }
-.special .img-card img{
-
+.offers .card .card-body a:hover{
+  color: #fff !important;
 }
 </style>

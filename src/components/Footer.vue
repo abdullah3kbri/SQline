@@ -8,11 +8,11 @@
                             <a class="navbar-brand pb-3" href="#">
                             <v-icon><img class="img-fluid icon" src="/public/logo.svg" alt=""></v-icon>
                             </a>
-                            <p>نحن شركة ( SQline )متخصصة في إنتاج منتجات العناية بالبشرة, لا تفوت العروض، تابعنا للحصول على آخر الأخبار</p>
+                            <p class="des-footer">نحن شركة ( SQline )متخصصة في إنتاج منتجات العناية بالبشرة, لا تفوت العروض، تابعنا للحصول على آخر الأخبار</p>
                             <div class="social-media pt-3 d-flex justify-content-md-start align-items-center">
-                                <a href="" class="ps-0 ps-md-3"><v-icon icon="mdi-whatsapp"></v-icon></a>
-                                <a href="" class="ps-2 ps-md-3"><v-icon icon="mdi-instagram"></v-icon></a>
-                                <a href="" class="ps-2 ps-md-3"><v-icon icon="mdi-facebook"></v-icon></a>
+                                <a href="" class="ps-0 ps-lg-3"><v-icon icon="mdi-whatsapp"></v-icon></a>
+                                <a href="" class="ps-2 ps-lg-3"><v-icon icon="mdi-instagram"></v-icon></a>
+                                <a href="" class="ps-2 ps-lg-3"><v-icon icon="mdi-facebook"></v-icon></a>
                                 <a href=""><v-icon icon="mdi-twitter"></v-icon></a>
                             </div>
                         </div>
@@ -30,11 +30,11 @@
                         <h5 class="pb-3 footer-header">روابط سريعة</h5>
                         <div class="links text-end m-auto pb-5 pb-md-0">
                             <ul class="list-style-dot">
-                                <li class="py-1"><a href="">الرئيسية</a></li>
-                                <li class="py-1"><a href="">من نحن</a></li>
-                                <li class="py-1"><a href="">المنتجات</a></li>
-                                <li class="py-1"><a href="">المدونة</a></li>
-                                <li><a href="">اتصل بنا</a></li>
+                                <li class="py-1"><router-link to="/">الرئيسية</router-link></li>
+                                <li class="py-1"><a href="/#about-us">من نحن</a></li>
+                                <li class="py-1"><router-link to="products">المنتجات</router-link></li>
+                                <li class="py-1"><router-link to="articles">المدونة</router-link></li>
+                                <li><router-link to="">اتصل بنا</router-link></li>
                             </ul>
                         </div>
                     </div>
@@ -43,7 +43,7 @@
                         <h6 class="py-2">تواصل معنا</h6>
                         <div class="links">
                             <p><v-icon icon="mdi-map-marker" class="ps-3"></v-icon> اليمن - حضرموت</p>
-                            <p><v-icon icon="mdi-phone" class="ps-3 py-4"></v-icon> 967722736352</p>
+                            <p><v-icon icon="mdi-phone" class="ps-3 py-4"></v-icon> 967733365242</p>
                             <p><v-icon icon="mdi-email" class="ps-3"></v-icon>sqline@gmail.com</p>
                         </div>
                     </div>
@@ -81,5 +81,15 @@ export default {
 }
 .rights{
     background-color: #690108;
+}
+@media (min-width: 575px) {
+    .des-footer{
+        width: 90%;
+    }
+}
+@media (max-width: 992px) {
+    .footer-header::before{
+    height: 1.6px !important;
+}
 }
 </style>

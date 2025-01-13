@@ -18,18 +18,20 @@
                           <router-link to="/">الرئيسية</router-link>
                             <!-- <a class="nav-link active-link" @click="setActiveLink" aria-current="page" href="#landing">الرئيسية</a> -->
                         </li>
-                        <li class="nav-item me-3">
-                            <a class="nav-link" href="#us">من نحن ؟</a>
+                        <li class="nav-item me-3 m-auto">
+                            <a class="nav-link text-dark" href="/#about-us">
+                              من نحن ؟
+                            </a>
                         </li>
-                        <li class="nav-item me-3">
-                            <a class="nav-link" href="#services">المنتجات</a>
+                        <li class="nav-item me-3 m-auto border-none">
+                          <router-link class="border-none" to="/products">المنتجات</router-link>
                         </li>
                         <li class="nav-item me-3 m-auto">
                             <router-link to="/articles">المدونة
                             </router-link>                            
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="#footer">اتصل بنا </a>
+                            <a class="nav-link text-dark" href="#footer">اتصل بنا </a>
                         </li>
                     </ul>
                     <div>
@@ -67,5 +69,8 @@ function setActiveLink(){
 @import '../assets/_reset.css';
 header .icon {
   max-width: 70px;
+}
+.active-link{
+  color: #690108 !important;
 }
 </style>

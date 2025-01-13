@@ -9,9 +9,6 @@ h1,h2, h3, h4, h5, h6 {
     padding: 0;
     font-weight: bold;
 }
-body{
-    height: 1900px;
-}
 @font-face {
     font-family: 'tajwa-bold';
     src: url(../assets/fonts/Tajawal-Bold.ttf);
@@ -76,5 +73,10 @@ header nav{
 .main-btn{
     background-color: $secondary-color;
     border-radius: 10px;
+}
+@media (max-width: 768px){
+    .v-window--show-arrows-on-hover .v-window__left, .v-window--show-arrows-on-hover .v-window__right{
+        display: none !important;
+    }
 }
 /* Add more global styles here */

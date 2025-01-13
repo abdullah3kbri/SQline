@@ -16,7 +16,7 @@
                         </div>
                         <div class="col-md-4">
                             <div>
-                                <v-img src="../assets/img/about.png"></v-img>
+                                <v-img src="/img/about.png"></v-img>
                             </div>
                         </div>
                     </div>
@@ -36,7 +36,7 @@ export default {
 </script>
 <style scoped>
 .about{
-    background-image: url(../assets/img/AboutTheCompany.png);
+    background-image: url(/img/AboutTheCompany.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

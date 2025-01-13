@@ -64,7 +64,7 @@
   --sec-color: #690108;
 }
 .landing .carousel-inner .carousel-item{
-    background-image: url(../assets/img/landing.png);
+    background-image: url(/img/landing.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

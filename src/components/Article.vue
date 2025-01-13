@@ -31,7 +31,7 @@
                     </div>
                     <p class="author py-3">المؤلف : احمد خالد سعيد <v-icon class="me-2">mdi-pen</v-icon></p>
                     <div class="article-img">
-                        <v-img src="../assets/img/article2.png"></v-img>
+                        <v-img src="/img/article2.png"></v-img>
                     </div>
                     <div class="date pt-2">
                         <span class="text-muted">2/1/2025 <v-icon>mdi-calendar</v-icon></span>
@@ -72,11 +72,38 @@
                                 الترطيب + التغذية = الجيل الجديد السريع التخصصي في كريمات متعددة الوظائف "</p>
                         </ul>
                     </div>
-                    <div class="my-4">
-                        <v-pagination v-model="page" :length="5" rounded="1"></v-pagination>
-                    </div>
+                </div>
+                <div class="my-5 m-auto">
+                    <v-pagination v-model="page" :length="5" rounded="1"></v-pagination>
                 </div>
             </v-row>
+            <Comments />
+            <div class="last-articles">
+                <div class="last-articles-heading position-relative py-3 mb-5">
+                    <h4>آخر المقالات <span class="line me-5"></span></h4>
+                </div>
+                <v-row class="gap-2 row-gap-5">
+                    <div class="col-12 col-md-5 m-auto" v-for="art in lastArticles" :key="art.id">
+                        <div>
+                            <div class="card-heading py-2 d-flex justify-content-between">
+                            <h6 class="text-dark lh-sm">{{ art.title }}</h6>
+                            <span class="text-light px-3">{{ art.date }}</span>
+                            </div>
+                            <div class="author">
+                                <span> المؤلف : {{ art.author }} <v-icon class="ms-2">mdi-pen</v-icon></span>
+                            </div>
+                            <div class="card-img py-2">
+                                <v-img :src="art.articleImg"></v-img>
+                            </div>
+                            <div class="card-desc">
+                                <p>{{ art.para1 }}</p>
+                                <p class="py-3">{{ art.para2 }}</p>
+                                <p>{{ art.para3 }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </v-row>
+            </div>
         </div>
     </div>
 </template>
@@ -86,6 +113,48 @@ export default {
         loaded: false,
         loading: false,
         page: 1,
+        lastArticles: [
+            {
+                id: 1,
+                title: "كريمات متعددة الوظائف: كيف يجمع بين الترطيب والتغذية؟",
+                date: '2025',
+                author: "احمد سعيد عمر",
+                para1: "وتتضمن هذه المقالة كريمات البشرة المتعددة الوظائف، مُبينة كيف يمكن لكريم واحد أن يُرطب البشرة ويغذيها في الوقت نفسه. سوف نقوم بشرح آلية عمل كل من الترطيب والتغذية، بالإضافة إلى المكونات الرئيسية التي ستقدر بشكل جيد لتحقيق الوظيفتين معًا. كما ستناقش فوائد استخدام كريمات متعددة الوظائف، ونصائح مفيدة للمناسب.",
+                para2: "لترطيب:   يعني تأثير خفيف على الجسم. تُحقق كريمات مُرطبة ذلك عن طريق سطح إلزامي على البشرة تمنع بشدة، وبعضها يحتوي على مُركبات مُرطبة تجذب من الجلد إلى البشرة                         اقرأ اكثر  ",
+                para3: "اقتباس : شرة صحية تحتاج إلى ترطيب وتغذية. كريمات متعددة تقدم حلاًّ شاملة تُغذي البشرة من الداخل وتحميها من الخارج.",
+                articleImg: "/img/article2.png"
+            },
+            {
+                id: 1,
+                title: "كريمات متعددة الوظائف: كيف يجمع بين الترطيب والتغذية؟",
+                date: '2025',
+                author: "احمد سعيد عمر",
+                para1: "وتتضمن هذه المقالة كريمات البشرة المتعددة الوظائف، مُبينة كيف يمكن لكريم واحد أن يُرطب البشرة ويغذيها في الوقت نفسه. سوف نقوم بشرح آلية عمل كل من الترطيب والتغذية، بالإضافة إلى المكونات الرئيسية التي ستقدر بشكل جيد لتحقيق الوظيفتين معًا. كما ستناقش فوائد استخدام كريمات متعددة الوظائف، ونصائح مفيدة للمناسب.",
+                para2: "لترطيب:   يعني تأثير خفيف على الجسم. تُحقق كريمات مُرطبة ذلك عن طريق سطح إلزامي على البشرة تمنع بشدة، وبعضها يحتوي على مُركبات مُرطبة تجذب من الجلد إلى البشرة                         اقرأ اكثر  ",
+                para3: "اقتباس : شرة صحية تحتاج إلى ترطيب وتغذية. كريمات متعددة تقدم حلاًّ شاملة تُغذي البشرة من الداخل وتحميها من الخارج.",
+                articleImg: "/img/article2.png"
+            },
+            {
+                id: 1,
+                title: "كريمات متعددة الوظائف: كيف يجمع بين الترطيب والتغذية؟",
+                author: "احمد سعيد عمر",
+                date: '2025',
+                para1: "وتتضمن هذه المقالة كريمات البشرة المتعددة الوظائف، مُبينة كيف يمكن لكريم واحد أن يُرطب البشرة ويغذيها في الوقت نفسه. سوف نقوم بشرح آلية عمل كل من الترطيب والتغذية، بالإضافة إلى المكونات الرئيسية التي ستقدر بشكل جيد لتحقيق الوظيفتين معًا. كما ستناقش فوائد استخدام كريمات متعددة الوظائف، ونصائح مفيدة للمناسب.",
+                para2: "لترطيب:   يعني تأثير خفيف على الجسم. تُحقق كريمات مُرطبة ذلك عن طريق سطح إلزامي على البشرة تمنع بشدة، وبعضها يحتوي على مُركبات مُرطبة تجذب من الجلد إلى البشرة                         اقرأ اكثر  ",
+                para3: "اقتباس : شرة صحية تحتاج إلى ترطيب وتغذية. كريمات متعددة تقدم حلاًّ شاملة تُغذي البشرة من الداخل وتحميها من الخارج.",
+                articleImg: "/img/article2.png"
+            },
+            {
+                id: 1,
+                title: "كريمات متعددة الوظائف: كيف يجمع بين الترطيب والتغذية؟",
+                author: "احمد سعيد عمر",
+                date: '2025',
+                para1: "وتتضمن هذه المقالة كريمات البشرة المتعددة الوظائف، مُبينة كيف يمكن لكريم واحد أن يُرطب البشرة ويغذيها في الوقت نفسه. سوف نقوم بشرح آلية عمل كل من الترطيب والتغذية، بالإضافة إلى المكونات الرئيسية التي ستقدر بشكل جيد لتحقيق الوظيفتين معًا. كما ستناقش فوائد استخدام كريمات متعددة الوظائف، ونصائح مفيدة للمناسب.",
+                para2: "لترطيب:   يعني تأثير خفيف على الجسم. تُحقق كريمات مُرطبة ذلك عن طريق سطح إلزامي على البشرة تمنع بشدة، وبعضها يحتوي على مُركبات مُرطبة تجذب من الجلد إلى البشرة                         اقرأ اكثر  ",
+                para3: "اقتباس : شرة صحية تحتاج إلى ترطيب وتغذية. كريمات متعددة تقدم حلاًّ شاملة تُغذي البشرة من الداخل وتحميها من الخارج.",
+                articleImg: "/img/article2.png"
+            },
+        ],
     }),
 
     methods: {
@@ -104,7 +173,7 @@ export default {
     background-color: #eee;
     border-radius: 8px;
 }
-.articles .article-heading span{
+.articles .article-heading span, .card-heading span{
     background-color: #690108;
     border-radius: 8px;
     display: flex;
@@ -115,7 +184,19 @@ export default {
     list-style-type: disc !important;
 }
 .articles .v-icon{
-    color: #000;
+  color: #690108;
     font-size: 18px;
+}
+.last-articles .last-articles-heading span{
+    height: 1.2px;
+    width: 90%;
+    background-color: #000;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+}
+.last-articles .author span{
+    font-size: 13px;
 }
 </style>

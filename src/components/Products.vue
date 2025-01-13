@@ -26,36 +26,36 @@
                     <v-row class="justify-content-evenly mb-3 mt-5 mt-md-0">
                         <div class="col-5">
                             <div class="first-product">
-                                <v-img src="../assets/img/product1.png"></v-img>
+                                <v-img src="/img/product1.png"></v-img>
                             </div>
                         </div>
                         <div class="col-5">
                             <div class="second-product">
-                                <v-img src="../assets/img/product2.png"></v-img>
+                                <v-img src="/img/product2.png"></v-img>
                             </div>
                         </div>
                     </v-row>
                     <v-row class="justify-content-evenly mb-3">
                         <div class="col-5">
                             <div class="thirt-product">
-                                <v-img src="../assets/img/product3.png"></v-img>
+                                <v-img src="/img/product3.png"></v-img>
                             </div>
                         </div>
                         <div class="col-5">
                             <div class="fourth-product">
-                                <v-img src="../assets/img/product4.png"></v-img>
+                                <v-img src="/img/product4.png"></v-img>
                             </div>
                         </div>
                     </v-row>
                     <v-row class="justify-content-evenly">
                         <div class="col-5">
                             <div class="sixth-product">
-                                <v-img src="../assets/img/product5.png"></v-img>
+                                <v-img src="/img/product5.png"></v-img>
                             </div>
                         </div>
                         <div class="col-5">
                             <div class="seven-product">
-                                <v-img src="../assets/img/product1.png"></v-img>
+                                <v-img src="/img/product1.png"></v-img>
                             </div>
                         </div>
                     </v-row>

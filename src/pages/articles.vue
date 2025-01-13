@@ -4,6 +4,7 @@
         <div class="container">
             <Article />
         </div>
+        <Footer />
     </div>
 </template>
 <script>

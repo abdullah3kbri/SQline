@@ -71,7 +71,7 @@ export default {
 </script>
 <style scoped>
 .yemen-map {
-    background-image: url(../assets/img/yemen.png);
+    background-image: url(/img/yemen.png);
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
