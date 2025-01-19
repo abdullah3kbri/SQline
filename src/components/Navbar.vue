@@ -13,7 +13,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarsExample07">
-                    <ul class="navbar-nav nav-pills mb-2 mt-3 mt-lg-0 mb-lg-0 m-auto">
+                    <ul class="navbar-nav nav-pills mb-2 mt-3 mt-lg-0 mb-lg-0 m-auto border-bottom pb-2">
                         <li class="nav-item me-3 m-auto">
                           <router-link to="/">الرئيسية</router-link>
                             <!-- <a class="nav-link active-link" @click="setActiveLink" aria-current="page" href="#landing">الرئيسية</a> -->
@@ -23,8 +23,8 @@
                               من نحن ؟
                             </a>
                         </li>
-                        <li class="nav-item me-3 m-auto border-none">
-                          <router-link class="border-none" to="/products">المنتجات</router-link>
+                        <li class="nav-item me-3 m-auto pb-2 pb-lg-0">
+                          <router-link to="/products">المنتجات</router-link>
                         </li>
                         <li class="nav-item me-3 m-auto">
                             <router-link to="/articles">المدونة
@@ -72,5 +72,13 @@ header .icon {
 }
 .active-link{
   color: #690108 !important;
+}
+.collapse .navbar-nav{
+  border-color: #d5d5d5 !important;
+}
+@media (min-width: 992px){
+  .collapse .navbar-nav{
+    border: none !important;
+  }
 }
 </style>

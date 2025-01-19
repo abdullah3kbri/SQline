@@ -79,4 +79,7 @@ header nav{
         display: none !important;
     }
 }
+*:focus{
+    outline: none !important;
+}
 /* Add more global styles here */

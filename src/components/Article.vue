@@ -189,12 +189,28 @@ export default {
 }
 .last-articles .last-articles-heading span{
     height: 1.2px;
-    width: 90%;
+    width: 80%;
     background-color: #000;
     color: #000;
     position: absolute;
     top: 50%;
     transform: translateY(50%);
+}
+@media (max-width: 992px){
+    .last-articles .last-articles-heading span{
+        width: 70%;
+    }
+}
+@media (max-width: 600px){
+    .last-articles .last-articles-heading span{
+        width: 60% !important;
+    }
+}
+@media (max-width: 400px){
+    .last-articles .last-articles-heading span{
+        width: 50% !important;
+        margin-right: 15px !important;
+    }
 }
 .last-articles .author span{
     font-size: 13px;

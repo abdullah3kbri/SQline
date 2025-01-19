@@ -9,7 +9,7 @@
       <div class="product">
         <v-row>
           <v-col v-for="(card, index) in cards" :key="index" cols="12" sm="6" md="4">
-            <v-card class="mx-auto p-3" max-width="344">
+            <v-card class="mx-auto p-3" max-width="344" @click="goToDetails">
               <v-img :src="card.imgSrc" height="200px" cover></v-img>
               <v-card-title class="text-center">
                 <h5>{{ card.title }}</h5>
@@ -138,6 +138,8 @@
 import YemenMap from '@/components/YemenMap.vue';
 import Footer from '@/components/Footer.vue';
 import Products from '@/components/Products.vue';
+import { useRoute } from 'vue-router';
+
 // mohammed
 export default {
   data() {
@@ -183,6 +185,11 @@ export default {
         ],
     };
   },
+  methods: {
+        goToDetails(id) {
+            this.$router.push('/productDetails');
+        },
+    },
 };
 </script>
 
@@ -192,6 +199,7 @@ export default {
 }
 .v-card{
   /* border: 1px solid #690108; */
+  cursor: pointer;
 }
 .main-heading-2 h2::before{
   content: '';

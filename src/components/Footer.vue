@@ -5,7 +5,7 @@
                 <v-row>
                     <div class="col-12 col-sm-6 col-md-3">
                         <div class="px-0 pb-4 p-md-0">
-                            <a class="navbar-brand pb-3" href="#">
+                            <a class="navbar-brand py-3" href="#">
                             <v-icon><img class="img-fluid icon" src="/public/logo.svg" alt=""></v-icon>
                             </a>
                             <p class="des-footer">نحن شركة ( SQline )متخصصة في إنتاج منتجات العناية بالبشرة, لا تفوت العروض، تابعنا للحصول على آخر الأخبار</p>
@@ -76,7 +76,7 @@ export default {
     right: 0;
     bottom: 4px;
     width: 40%;
-    height: 1.6px;
+    height: 1.3px;
     background-color: #690108;
 }
 .rights{
@@ -89,7 +89,7 @@ export default {
 }
 @media (max-width: 992px) {
     .footer-header::before{
-    height: 1.6px !important;
+    height: 1.2px !important;
 }
 }
 </style>

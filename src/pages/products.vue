@@ -127,6 +127,7 @@ export default {
     height: 100%;
     background-color: #E6C7B2;
     border-radius: 15px;
+    cursor: pointer;
 }
 @media (min-width: 992px) {
     .products .filtering{
